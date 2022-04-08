@@ -1,0 +1,37 @@
+$sub-color: grey;
+$main-color: black;
+
+@mixin disappearLabel {
+  display: none;
+}
+
+.group {
+  position: relative;
+  margin: 45px 0;
+
+  .form-input {
+    background: none;
+    background-color: white;
+    color: $sub-color;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $sub-color;
+    margin: 20px 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .form-input-label {
+    color: $sub-color;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    pointer-events: none;
+  }
+}
