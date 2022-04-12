@@ -77,20 +77,12 @@
       font-size: 20px;
       color: #000;
 
-      &:hover {
-        color: #a0fff0;
-        transition: all 0.3s ease;
-      }
 
       @include tablet {
         text-align: center;
         padding: 30px;
         width: 100%;
         display: table;
-
-        &:hover {
-          background-color: rgb(68, 68, 68);
-        }
       }
     }
 
@@ -140,10 +132,6 @@
         padding: 30px;
         width: 100%;
         display: table;
-
-        &:hover {
-          background-color: rgb(68, 68, 68);
-        }
       }
     }
 

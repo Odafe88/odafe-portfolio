@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import crypto from '../../assets/proj_imgs/crypto_app.png'
 import blog from '../../assets/proj_imgs/blog_snip.png'
+import crwn from '../../assets/proj_imgs/crwn.png'
 
 import "./project.styles.scss"
 
@@ -26,7 +27,15 @@ const ProJectPage = () => {
             excerpt: "A Blog app built with NextJs and Tailwindcss utilizing GraphCMS for content management and GraphQL for queries.",
             slug: "blog-app"
 
-        }
+        },
+        {
+            name: "e-Commerce site",
+            url: "http://crwn-clothing-odafe88.vercel.app/",
+            imgUrl: crwn,
+            excerpt: "A ficticious e-commerce site for a clothing brand built with ReactJs and styled-components, uses firebase for user authentication, flutterwave for prcessing payments and redux for state management.",
+            slug: "crown-clothing"
+
+        },
     ]
 
 
