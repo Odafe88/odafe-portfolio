@@ -12,12 +12,16 @@
 
 .contact-form {
   margin: auto;
-  max-width: 400px;
+  max-width: 100%;
   padding: 20px;
   border-radius: 7px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 
   .form {
-    margin: auto;
+    margin: 10px 15px;
+    align-items: flex-start;
 
     .btn {
       display: flex;
@@ -34,7 +38,6 @@
 
       .custom-button {
         display: inline-block;
-        box-shadow: rgb(175, 175, 175) 5px 5px 5px;
 
         @include mobile {
           font-size: 20px;

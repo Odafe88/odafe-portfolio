@@ -44,15 +44,14 @@ class Header extends React.Component {
                     <Link onClick={this.handleClick} className='option' to='/'>
                         Home
                     </Link>
-                    <Link onClick={this.handleClick} className='option ' to='/about'>
-                        About
-                    </Link>
-                    <Link onClick={this.handleClick} className='option' to='/contact'>
+                    <Link onClick={this.handleClick} className='option' to='/contact-email'>
                         Contact
                     </Link>
-                    <Link onClick={this.handleClick} className='option' to='/projects'>
-                        Projects
-                    </Link>
+                    <button className="header-button">
+                        <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1TM2M0aiUlQqryNEehDgL0c-EeSFMHj5X/view?usp=sharing">
+                            Resume
+                        </a>
+                    </button>
                 </div>
             </header >
         )

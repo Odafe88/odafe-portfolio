@@ -43,7 +43,7 @@ const ProJectPage = () => {
         <div className="project-page">
             <div className="project-header">
                 <h3>
-                    Some of my works
+                    Notable projects
                 </h3>
 
             </div>
@@ -59,24 +59,12 @@ const ProJectPage = () => {
                                     </div>
                                     <p className="project-about">{project.excerpt}</p>
                                 </div>
-                                <span className="project-button"><a href={project.url} target="_blank" rel="noreferrer">VISIT PAGE</a></span>
+                                <button className="project-button"><a href={project.url} target="_blank" rel="noreferrer">VISIT PAGE</a></button>
                             </div>
 
                         )
                     })
                 }
-
-
-                <div className="hero-section">
-                    <div className="section-header">
-                        <h1>
-                            "For words without works is but nothing."
-                        </h1>
-                        <Link to="/about" className='link-button'>
-                            - Sir Krabs
-                        </Link>
-                    </div>
-                </div>
 
             </div>
         </div>

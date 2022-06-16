@@ -12,14 +12,14 @@
 
 .navbar {
   height: 80px;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: absolute;
   top: 0;
   margin-bottom: 0;
-  background: linear-gradient(to right, rgb(205, 203, 203), #dbbce6);
-  color: #000;
+  background: none;
+  color: #fff;
   z-index: 1;
   padding: 8px;
 
@@ -39,7 +39,7 @@
     }
 
     .my-logo {
-      color: #000;
+      color: #fff;
       margin: 0;
       font-family: 'Righteous', 'Poppins';
       font-size: 20px;
@@ -51,7 +51,7 @@
     display: none;
 
     @include tablet {
-      color: #000;
+      color: #fff;
       margin: auto;
       font-size: 30px;
       margin-top: 5px;
@@ -68,14 +68,13 @@
     padding: 5px;
     align-items: center;
     justify-content: flex-end;
-    font-family: 'IBM Plex Mono', monospace;
-    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
 
     .option {
       padding: 10px 15px;
       cursor: pointer;
       font-size: 20px;
-      color: #000;
+      color: #fff;
 
 
       @include tablet {
@@ -84,6 +83,21 @@
         width: 100%;
         display: table;
       }
+    }
+
+    .header-button {
+      background: #4cd137;
+      border: none;
+      border-radius: 5px;
+      height: 50px;
+      padding: 5px;
+      width: auto;
+      transition: all ease-in 0.2s;
+
+      &:hover {
+        background: #fff;
+      }
+
     }
 
     @include mobile {
@@ -120,11 +134,9 @@
     .option {
       padding: 10px 15px;
       cursor: pointer;
-      color: #000;
+      color: #fff;
       font-size: 20px;
-      font-family: 'IBM Plex Mono', monospace;
-      text-decoration: underline;
-
+      font-family: 'Poppins', sans-serif;
 
 
       @include tablet {
@@ -135,6 +147,22 @@
       }
     }
 
+    .header-button {
+      background: #4cd137;
+      border: none;
+      border-radius: 5px;
+      height: 50px;
+      padding: 5px;
+      width: auto;
+      transition: all ease-in 0.2s;
+
+      &:hover {
+        background: #fff;
+      }
+
+    }
+
+
     @include tablet {
       display: flex;
       flex-direction: column;
@@ -144,7 +172,7 @@
       height: 500px;
       position: absolute;
       //background: #2a2e9e;
-      background: linear-gradient(to right, rgb(205, 203, 203), #dbbce6);
+      background: #1d1d1d;
       top: 60px;
       left: 0;
       transition: all 0.5s ease;

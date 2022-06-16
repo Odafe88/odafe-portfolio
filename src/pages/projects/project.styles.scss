@@ -14,14 +14,21 @@
   margin: auto;
   padding: 50px;
   width: 100%;
+  // background: #9c88ff;
+  background-color: #9C88FF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23fbc531' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23353b48' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23ff8c58' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23125876' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23da687a' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23007994' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23985983' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23009a95' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23554c6c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2300b876' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%232f3640' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%234cd137' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: scroll;
+  background-size: cover;
 
   .project-header {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin-top: 10px;
+    color: #fff;
+    text-shadow: #131313 3px 3px;
 
     @include tablet {
-      font-size: 20px;
+      font-size: 25px;
     }
   }
 
@@ -52,16 +59,22 @@
       height: auto;
       width: auto;
       margin-bottom: 20px;
+      color: #000;
 
       .project-lapo {
         padding: 15px;
         width: 600px;
         height: 500px;
         margin: 20px auto;
-        background: #faedff;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px rgba(46, 37, 37, 0.374);
+        background: #f5f6fa;
+        border: 2px solid #131313;
+        border-radius: 8px;
+        transition: all ease-in 0.2s;
+
+
+        &:hover {
+          box-shadow: -8px -8px #131313;
+        }
 
 
         @include tablet {
@@ -74,10 +87,12 @@
           position: relative;
           align-self: center;
           text-align: left;
-          font-size: 20px;
+          font-size: 35px;
+          font-weight: 700;
+          font-family: "Righteous" sans-serif;
 
           @include tablet {
-            font-size: 15px;
+            font-size: 25px;
           }
         }
 
@@ -122,55 +137,37 @@
       }
 
       .project-button {
-        padding: 10px;
+        padding: 5px 10px;
         text-align: center;
         text-align: center;
         justify-content: center;
+        border: 2px solid #000;
+        border-radius: 4px;
+        height: 55px;
+        width: auto;
+        cursor: pointer;
+        font-family: 'Righteous', monospace;
+        font-weight: 600;
+        font-size: 17px;
+        color: #000;
+        transition: all ease-in 0.2s;
 
         a {
-          width: auto;
           color: #000;
-          font-weight: 400;
-          font-size: 17px;
-          font-family: 'IBM Plex Mono', monospace;
-          text-decoration: underline;
-          cursor: pointer;
+        }
+
+        &:hover {
+          box-shadow: #000 -3px -3px;
         }
 
         @include tablet {
-          width: 100px;
-          height: 30px;
+          width: auto;
+          height: 50px;
           font-size: 15px;
         }
 
       }
     }
 
-    .hero-section {
-      padding: 10px;
-      border: none;
-      border-radius: 10px;
-      margin-top: 40px;
-      background-color: #FFE3E4;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%237f7f7f' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%239c9c9c' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%237f7f7f' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%239c9c9c' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23BBBBBB' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23ad9bb0' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23d4c1d7' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23FCE9FF' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23d4c1d7' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23ad9bb0' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23FCE9FF' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23ad9bb0' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23FCE9FF' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23d4c1d7' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23FCE9FF' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
-      box-shadow: 5px 5px 5px rgba(46, 37, 37, 0.374);
-
-
-      .section-header {
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(16, 0, 119);
-
-        h1 {
-          -webkit-text-stroke: 1px rgb(33, 33, 33);
-        }
-
-        .link-button {
-          color: #000;
-          font-size: 1rem;
-          text-decoration: underline;
-          font-family: 'IBM Plex Mono', monospace;
-        }
-      }
-    }
   }
 }

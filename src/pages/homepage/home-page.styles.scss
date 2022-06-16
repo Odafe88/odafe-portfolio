@@ -46,192 +46,131 @@ $root: '.c-rainbow';
 
 
 .homepage-body {
-  max-height: 100vh;
+  height: 100vh;
   max-width: 100%;
   padding: 0 20px;
-  margin: auto;
   position: relative;
-  color: #000;
+  display: flex;
+  background-color: #1D1D1D;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23487eb0' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23353b48' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23456f98' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23125876' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23416081' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23007994' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%233c516b' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23009a95' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23364355' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2300b876' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%232f3640' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%234cd137' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: scroll;
+  background-size: cover;
   font-family: 'Righteous', 'Poppins';
 
 
 
   .homepage-container {
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-around;
+    margin-top: 60px;
 
-    @include tablet {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center;
-      align-items: center;
-    }
-
-    @include mobile {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero-section {
-      padding: 10px;
-      border: none;
-      border-radius: 10px;
-      background-color: #FFE3E4;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%237f7f7f' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%239c9c9c' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%237f7f7f' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%239c9c9c' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23BBBBBB' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23ad9bb0' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23d4c1d7' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23FCE9FF' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23d4c1d7' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23ad9bb0' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23FCE9FF' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23ad9bb0' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23FCE9FF' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23d4c1d7' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23FCE9FF' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
-      box-shadow: 5px 5px 5px rgba(46, 37, 37, 0.374);
-
-
-      .section-header {
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(15, 2, 97);
-
-        h1 {
-          -webkit-text-stroke: 1px rgb(33, 33, 33);
-        }
-
-        .link-button {
-          color: #000;
-          font-size: 1rem;
-          text-decoration: underline;
-          font-family: 'IBM Plex Mono', monospace;
-        }
-      }
-    }
 
     .home-page {
       max-width: 900px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: left;
+      align-items: start;
       margin: 30px 20px;
 
       @include tablet {
         width: 100%;
-        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         text-align: left;
+        margin: 0;
       }
 
       @include mobile {
         width: 100%;
-        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         text-align: left;
       }
 
-      #{$root} {
-        counter-reset: rainbow;
-        position: relative;
-        display: block;
+      .homepage-aly {
+        font-size: 55px;
+        color: #4cd137;
+        margin: 10px 20px;
+        font-family: 'Poppins' sans-serif;
 
-
-        list-style: none;
-
-        padding: 0;
-        margin: auto;
-
-        &__layer {
-          --text-color: var(--color-foreground);
-          counter-increment: rainbow;
-          font-size: 5rem;
-          color: var(--text-color);
-
-          text-shadow:
-            -1px -1px 0 var(--color-black),
-            1px -1px 0 var(--color-black),
-            -1px 1px 0 var(--color-black),
-            1px 1px 0 var(--color-black),
-
-            4px 4px 0 rgba(0, 0, 0, .2);
-
-          animation: rainbow 1.5s ease-in-out infinite;
-
-          @for $i from 1 through 7 {
-            &:nth-child(#{$i}) {
-              animation-delay: calc(#{$i} / var(--delay) * 1s);
-              left: calc(var(--axis-x) * #{$i});
-              z-index: -#{$i * 10};
-            }
-          }
-
-          &:not(:first-child) {
-            position: absolute;
-            top: 0;
-          }
-
-          &--white {
-            --text-color: var(--color-white)
-          }
-
-          &--orange {
-            --text-color: var(var(--color-gray))
-          }
-
-          &--red {
-            --text-color: var(--color-red)
-          }
-
-          &--violet {
-            --text-color: var(--color-violet)
-          }
-
-          &--blue {
-            --text-color: var(--color-blue)
-          }
-
-          &--green {
-            --text-color: var(--color-green)
-          }
-
-          &--yellow {
-            --text-color: var(--color-yellow)
-          }
-        }
-      }
-
-
-      .intro-header {
-        text-align: left;
-        font-size: 150px;
-        margin: auto;
 
         @include tablet {
-          font-size: 80px;
-
+          font-size: 35px;
+          margin: 0 10px;
         }
+
+      }
+
+      .homepage-aly-2 {
+        font-size: 35px;
+        color: #fff;
+        margin: 10px 20px;
+        font-family: 'Poppins' sans-serif;
+
+        @include tablet {
+          font-size: 25px;
+          margin: 15px 10px;
+        }
+
       }
 
       .intro-fofm {
-        font-size: 75px;
-        margin: auto;
+        font-size: 80px;
+        margin: 0 20px;
         text-align: left;
         font-weight: 400;
+        color: #fff;
+
+        .intro-fofm-hi {
+          font-size: 45px;
+
+          @include tablet {
+            font-size: 30px
+          }
+        }
+
+        .intro-fofm-name {
+          color: #fff;
+          font-family: 'Righteous';
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: black;
+          text-shadow: #4cd137 3px 3px;
+        }
 
 
         @include tablet {
-          font-size: 45px;
-          margin: auto;
+          font-size: 50px;
+          margin: 0 10px;
         }
       }
 
-      .span-cover {
-        margin: 15px auto;
+      .link-button {
+        position: relative;
+
+        @include tablet {
+          margin: auto;
+          width: 100%;
+        }
 
 
-        .intro-span {
-          font-size: 55px;
-          text-shadow: rgba(128, 128, 128, 0.37) 2px 2px 2px;
-          font-weight: 500;
+        .custom-button {
+          display: inline-block;
+          width: auto;
+          border: none;
+          border-radius: 4px;
+          color: #fff;
+          background: #4cd137;
+          margin: 0 15px;
+          font-weight: 700;
+          font-size: 20px;
 
           @include tablet {
-            font-size: 45px;
-            margin: auto;
+            font-size: 15px;
           }
 
-          @include mobile {
-            font-size: 22px;
+          &:hover {
+            box-shadow: #0f5a03 -5px -5px
           }
         }
       }
@@ -240,28 +179,5 @@ $root: '.c-rainbow';
 
   }
 
-  .link-button {
-    position: relative;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin-left: 20px;
 
-    @include tablet {
-      margin: auto;
-      width: 100%;
-    }
-
-
-    .custom-button {
-      display: inline-block;
-      box-shadow: rgb(175, 175, 175) 5px 5px 5px;
-
-      @include tablet {
-        margin-top: 100px;
-        font-size: 15px;
-      }
-    }
-  }
 }

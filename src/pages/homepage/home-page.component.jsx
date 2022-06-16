@@ -13,41 +13,25 @@ const HomePage = () => {
             <div className='homepage-container'>
 
                 <div className='home-page'>
-                    <p className='intro-fofm' >Hi I'm</p>
-                    <ul className="c-rainbow">
-                        <li className="c-rainbow__layer c-rainbow__layer--white">Odafe</li>
-                        <li className="c-rainbow__layer c-rainbow__layer--orange">Odafe</li>
-                        <li className="c-rainbow__layer c-rainbow__layer--red">Odafe</li>
-                        <li className="c-rainbow__layer c-rainbow__layer--violet">Odafe</li>
-                        <li className="c-rainbow__layer c-rainbow__layer--blue">Odafe</li>
-                        <li className="c-rainbow__layer c-rainbow__layer--green">Odafe</li>
-                        <li className="c-rainbow__layer c-rainbow__layer--yellow">Odafe</li>
-                    </ul>
-                    <div className="span-cover">
-                        <span className='intro-span'>A web developer</span>
-                    </div>
+                    <h1 className='intro-fofm' >
+                        <span className="intro-fofm-hi">Hi &#128075;,</span><br></br>I'm <span className="intro-fofm-name">Odafe</span>
+                    </h1>
+                    <p className="homepage-aly" >
+                        A frontend developer.
+                    </p>
+                    <p className="homepage-aly-2">
+                        I design and develop websites for businesses and agencies to help increase their reach.
+                    </p>
+                    <Link className="link-button" to="/contact-email">
+                        <button className="custom-button">
+                            Contact me
+                        </button>
+                    </Link>
+
+
                 </div>
-                <div className="hero-section">
-                    <div className="section-header">
-                        <h1>
-                            You want to know more?
-                        </h1>
-                        <Link to="/about" className='link-button'>
-                            click here
-                        </Link>
-                    </div>
-                </div>
+
             </div>
-
-            {/* <Zoom>
-                <Link to="/about" className='link-button'>
-                    <CustomButton className='custom-button'>
-                        More about me
-                    </CustomButton>
-                </Link>
-            </Zoom> */}
-
-
         </div>
 
 
