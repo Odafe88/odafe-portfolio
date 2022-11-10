@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import crypto from '../../assets/proj_imgs/crypto_app.png'
 import blog from '../../assets/proj_imgs/blog_snip.png'
 import crwn from '../../assets/proj_imgs/crwn.png'
+import mame from '../../assets/proj_imgs/mame_port.png'
 
 import "./project.styles.scss"
 
@@ -14,10 +15,18 @@ const ProJectPage = () => {
     const projects = [
         {
             name: "Crypto Tracker",
-            url: "http://crypto-app-gilt.vercel.app/",
+            url: "https://crypto-app-gilt.vercel.app/",
             imgUrl: crypto,
             excerpt: "A Crypto price tracker built with nextJs that utilizes a crypto API",
             slug: "crypto-tracker"
+
+        },
+        {
+            name: "Portfolio Page",
+            url: "https://creativemame.vercel.app/",
+            imgUrl: mame,
+            excerpt: "A Portfolio website for a Designer built with NextJs",
+            slug: "mame-port"
 
         },
         {
